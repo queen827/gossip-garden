@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gist Garden</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin-top: 0.4rem;
+      font-style: italic;
+      color: #ccc;
+    }
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      padding: 0.7rem 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+    }
+    nav a:hover {
+      background-color: #333;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+    }
+    .post {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+      margin-bottom: 3rem;
+    }
+    .post h2 {
+      margin-top: 0;
+      color: #000;
+      font-size: 2rem;
+    }
+    .post p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+    .emoji {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
+    #more1, #more2, #more3 { display: none; }
+    .toggleBtn {
+      margin-top: 1.2rem;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.4rem;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+    .actions {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      cursor: pointer;
+      border: none;
+      padding: 0.7rem 1.8rem;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: all 0.25s ease;
+    }
+    .like, .subscribe {
+      background-color: #000;
+      color: #fff;
+      border: 2px solid #000;
+    }
+    .like:hover, .subscribe:hover {
+      background-color: #fff;
+      color: #000;
+      transform: scale(1.05);
+    }
+    .comment {
+      background-color: #fff;
+      color: #000;
+      border: 2px solid #000;
+    }
+    .comment:hover {
+      background-color: #000;
+      color: #fff;
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Gist Garden</h1>
+  <p>Where Gist Lovers Gather Daily 💬✨</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Entertainment</a>
+  <a href="#">News</a>
+  <a href="#">Extra</a>
+  <a href="#">Scholarships</a>
+  <a href="#">Religion</a>
+</nav>
+
+<main>
+
+  <!-- Post 1 -->
+  <article class="post">
+    <h2>🤣 Davido Reacts to Speed Darlington’s Interview 🎤</h2>
+    <p>You already know it's not a complete week online if Speed Darlington hasn’t dragged someone with full chest 😭💣.</p>
+    <div id="more1">
+      <p>This time, he came for OBO himself — Davido! He said Davido's money can’t buy real talent. 😩 As usual, the internet caught fire 🔥 and Omo Baba Olowo didn't stay quiet oh! Davido replied with style: “Your madness dey inspire me 😂🎶.”</p>
+      <p>Twitter was lit, Instagram was a movie, and fans were screaming “drop a diss track already!” 🎧📣 But instead of more dragging, Davido just dropped a pic with Rolls Royce keys and captioned: “Loud it for the people at the back.” 💰🚗💨</p>
+      <p>The moral of the gist? You can’t drag someone who’s busy flying private ✈️ and sipping zobo 🍷 in peace. Internet 1, Wahala 0 😎.</p>
+    </div>
+    <button class="toggleBtn" onclick="toggleMore('more1', this)">Read More ▼</button>
+    <div class="actions">
+      <button class="btn like">Like ❤️</button>
+      <button class="btn comment">Comment 💬</button>
+      <button class="btn subscribe">Subscribe ✉️</button>
+    </div>
+  </article>
+
+  <!-- Post 2 -->
+  <article class="post">
+    <h2>💍 “I Will Stand Beside You” – Nigerian Proposal Goes Viral 💖</h2>
+    <p>Picture this: a nervous Nigerian guy, heart pounding like a dundun drum 🥁, rehearsing a love speech for his girl. His voice cracking, eyes teary, but his heart? Solid! 😭❤️</p>
+    <div id="more2">
+      <p>He tells his babe Mary about their wahala — arguments about who owns more pillows, fights over plantain 😂🍌, and dreams about building a duplex together. And then boom — “Mary, will you marry me?” 😭💍</p>
+      <p>The video hit the streets of Instagram like pepper in the eyes. People screamed, reposted, and danced in the comments section. Forget luxury proposal oh — this one na local but powerful! 🤲🏽🔥</p>
+      <p>No diamond ring, just raw emotions and true love. Internet aunties already planning their own pre-wedding shoot 😭. One aunty even commented “Where can I download a man like this?” 😭💻😂</p>
+      <p>Moral of the gist? Sometimes, you no need ring light to shine love. You just need 1 good man and boldness 💪🏾💓.</p>
+    </div>
+    <button class="toggleBtn" onclick="toggleMore('more2', this)">Read More ▼</button>
+    <div class="actions">
+      <button class="btn like">Like ❤️</button>
+      <button class="btn comment">Comment 💬</button>
+      <button class="btn subscribe">Subscribe ✉️</button>
+    </div>
+  </article>
+
+  <!-- Post 3 -->
+  <article class="post">
+    <h2>📚 Exam Wahala? JAMB Says “No Wahala!” (Kind Of…) 😅</h2>
+    <p>So, here’s the gist: JAMB, our beloved exam giant, had a little technical hiccup. About 380,000 students got their exam results scrambled like jollof rice gone wrong! 😱</p>
+    <div id="more3">
+      <p>Imagine waiting anxiously for your results, only to see confusion! But JAMB came through with a silver lining — they're allowing affected students to retake the exam for free! 🎉</p>
+      <p>Yes, a whole do-over! Like retrying that final boss fight in a video game with cheat codes 😎. Some students are happy, shouting “God of second chance, I see you!” while others are crying, “Not again abeg 🥲.”</p>
+      <p>Moral of the gist? Life may glitch, but na you go press reset. Grab your books, flex that brain muscle, and enter that hall with vibes and vengeance! 📖🔥</p>
+    </div>
+    <button class="toggleBtn" onclick="toggleMore('more3', this)">Read More ▼</button>
+    <div class="actions">
+      <button class="btn like">Like ❤️</button>
+      <button class="btn comment">Comment 💬</button>
+      <button class="btn subscribe">Subscribe ✉️</button>
+    </div>
+  </article>
+
+</main>
+
+<footer>
+  &copy; 2025 Gist Garden
+</footer>
+
+<script>
+  function toggleMore(id, btn) {
+    const content = document.getElementById(id);
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      btn.textContent = "Read More ▼";
+    } else {
+      content.style.display = "block";
+      btn.textContent = "Read Less ▲";
+    }
+  }
+</script>
+
+</body>
+</html>
